@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гумова блокова</title>
+    <style>
+      #layout {
+        border: 1px solid black;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        height: 550px;
+      }
+      #header {
+        width: 60%;
+        height: 10%;
+        background-color: greenyellow;
+        float: left;
+      }
+      #empty {
+        width: 10%;
+        height: 100%;
+        float: left;
+      }
+      #sidebar {
+        width: 20%;
+        height: 100%;
+        background-color: gold;
+        float: left;
+      }
+      #body {
+        width: 60%;
+        height: 80%;
+        float: left;
+        background-color: cornsilk;
+      }
+      #footer {
+        width: 60%;
+        height: 10%;
+        float: left;
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Гумова блокова верстка</h3>
+    <div id="layout">
+      <div id="sidebar">2</div>
+      <div id="empty"></div>
+      <div style="height: 100%">
+        <div id="header">1</div>
+        <div id="body">4</div>
+        <div id="footer">3</div>
+      </div>
+      <div id="empty"></div>
+    </div>
+  </body>
+</html>

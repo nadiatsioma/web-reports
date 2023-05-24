@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фіксована таблична</title>
+    <style>
+      #layout td {
+        border: 1px solid black;
+        text-align: center;
+        font-size: 16px;
+      }
+      .header {
+        width: 90%;
+        height: 70px;
+        background-color: greenyellow;
+      }
+      .sidebar {
+        width: 25%;
+        height: 450px;
+        background-color: gold;
+      }
+      .toprow {
+        width: 65%;
+        height: 50px;
+        background-color: gold;
+      }
+      .footer {
+        width: 90%;
+        height: 70px;
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Фіксована таблична верстка</h3>
+    <table id="layout" cellpadding="0" cellspacing="0" width="1200px">
+      <tr>
+        <td rowspan="4"></td>
+        <td colspan="2" class="header">1</td>
+        <td rowspan="4"></td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="sidebar">2</td>
+        <td class="toprow">5</td>
+      </tr>
+      <tr>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="footer">3</td>
+      </tr>
+    </table>
+  </body>
+</html>
