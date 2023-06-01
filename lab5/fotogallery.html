@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratory work 5</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="unitegallery-master/dist/css/unite-gallery.css"
+    />
+    <link
+      rel="stylesheet"
+      href="unitegallery-master/dist/themes/default/ug-theme-default.css"
+    />
+    <script src="unitegallery-master/dist/js/unitegallery.js"></script>
+    <script
+      src="unitegallery-master/dist/themes/tiles/ug-theme-tiles.js"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <h3 id="topic">
+      <img src="../nadiia.jpg" alt="Nadiia" id="studentImage" />
+      ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br />З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ
+      ТЕХНОЛОГІЇ.<br />ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК" <br />
+      <br />
+      Бригада №32 <br />
+      Студентка: ІО-01 Цьома Надія
+    </h3>
+    <br />
+    <br />
+    <table class="labs">
+      <tr>
+        <td><a href="../lab1.html">Лабораторна робота №1</a></td>
+        <td><a href="../lab2.html">Лабораторна робота №2</a></td>
+        <td><a href="../lab3.html">Лабораторна робота №3</a></td>
+        <td><a href="../lab4.html">Лабораторна робота №4</a></td>
+        <td><a href="../lab5.html">Лабораторна робота №5</a></td>
+        <td><a href="../lab6.html">Лабораторна робота №6</a></td>
+        <td><a href="../lab7.html">Лабораторна робота №7</a></td>
+        <td><a href="../lab8.html">Лабораторна робота №8</a></td>
+        <td><a href="../lab9.html">Лабораторна робота №9</a></td>
+      </tr>
+    </table>
+    <br />
+    <div id="labcontents">
+      <table class="labcontents">
+        <tr>
+          <td><a href="theme.html">Тема, мета і місце розташування</a></td>
+        </tr>
+        <tr>
+          <td><a href="3punkt.html">Динамічні елементи 3 пункт</a></td>
+        </tr>
+        <tr>
+          <td><a href="gallery.html">Галерея UniteGallery</a></td>
+        </tr>
+        <tr>
+          <td class="subcontents">
+            <a href="fotogallery.html">Галерея фото</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="subcontents">
+            <a href="slidefoto.html">Слайдер фотографій</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="subcontents">
+            <a href="slidevideo.html">Слайдер відео</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="social.html">Кнопки соціальних мереж</a></td>
+        </tr>
+        <tr>
+          <td><a href="informers.html">Інформери</a></td>
+        </tr>
+        <tr>
+          <td><a href="conclusion.html">Висновки</a></td>
+        </tr>
+      </table>
+    </div>
+    <div id="container">
+      <h2>Галерея UniteGallery</h2>
+      <div id="galleryTiles" style="display: none">
+        <!--./galleryTiles-->
+        <img
+          alt="Image 1"
+          src="images/image1.jpg"
+          data-image="images/image1.jpg"
+          data-description="Image 1 Description"
+        />
+        <img
+          alt="Image 2"
+          src="images/image2.jpg"
+          data-image="images/image2.jpg"
+          data-description="Image 2 Description"
+        />
+        <img
+          alt="Image 3"
+          src="images/image3.jpg"
+          data-image="images/image3.jpg"
+          data-description="Image 3 Description"
+        />
+        <img
+          alt="Image 4"
+          src="images/image4.jpg"
+          data-image="images/image4.jpg"
+          data-description="Image 4 Description"
+        />
+        <img
+          alt="Image 5"
+          src="images/image5.jpg"
+          data-image="images/image5.jpg"
+          data-description="Image 5 Description"
+        />
+        <img
+          alt="Image 6"
+          src="images/image6.jpg"
+          data-image="images/image6.jpg"
+          data-description="Image 6 Description"
+        />
+      </div>
+      <h3>Підключення бібліотеки jQuery:</h3>
+      <img src="images/lib3.png" width="700" />
+      <h3>JS-код :</h3>
+      <img src="images/js3.png" width="400" />
+    </div>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery("#galleryTiles").unitegallery({
+          gallery_theme: "tiles",
+          tiles_type: "nested",
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/social-media-share-buttons/dist/social-media-share-buttons.min.js"></script>
+    <title>Laboratory work 5</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .social-buttons {
+        display: inline-block;
+        margin-left: 10px;
+      }
+      .social-img {
+        width: 40px;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3 id="topic">
+      <img src="../nadiia.jpg" alt="Nadiia" id="studentImage" />
+      ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br />З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ
+      ТЕХНОЛОГІЇ.<br />ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК" <br />
+      <br />
+      Бригада №32 <br />
+      Студентка: ІО-01 Цьома Надія
+    </h3>
+    <br />
+    <br />
+    <table class="labs">
+      <tr>
+        <td><a href="../lab1.html">Лабораторна робота №1</a></td>
+        <td><a href="../lab2.html">Лабораторна робота №2</a></td>
+        <td><a href="../lab3.html">Лабораторна робота №3</a></td>
+        <td><a href="../lab4.html">Лабораторна робота №4</a></td>
+        <td><a href="../lab5.html">Лабораторна робота №5</a></td>
+        <td><a href="../lab6.html">Лабораторна робота №6</a></td>
+        <td><a href="../lab7.html">Лабораторна робота №7</a></td>
+        <td><a href="../lab8.html">Лабораторна робота №8</a></td>
+        <td><a href="../lab9.html">Лабораторна робота №9</a></td>
+      </tr>
+    </table>
+    <br />
+    <div id="labcontents">
+      <table class="labcontents">
+        <tr>
+          <td><a href="theme.html">Тема, мета і місце розташування</a></td>
+        </tr>
+        <tr>
+          <td><a href="3punkt.html">Динамічні елементи 3 пункт</a></td>
+        </tr>
+        <tr>
+          <td><a href="gallery.html">Галерея UniteGallery</a></td>
+        </tr>
+        <tr>
+          <td><a href="social.html">Кнопки соціальних мереж</a></td>
+        </tr>
+        <tr>
+          <td><a href="informers.html">Інформери</a></td>
+        </tr>
+        <tr>
+          <td><a href="conclusion.html">Висновки</a></td>
+        </tr>
+      </table>
+    </div>
+    <div id="container">
+      <h2>Кнопки соціальних мереж</h2>
+      <div class="social-buttons">
+        <p>Натисніть на ікону соц. мережі, щоб перейти на її сторінку.</p>
+        <a class="social-buttons facebook" href="https://uk-ua.facebook.com/"
+          ><img class="social-img" src="images/facebook.png" alt="Facebook"
+        /></a>
+        <a class="social-buttons instagram" href="https://www.instagram.com/">
+          <img class="social-img" src="images/instagram.png" alt="instagram"
+        /></a>
+        <a class="social-buttons pinterest" href="https://www.pinterest.com/">
+          <img class="social-img" src="images/pinterest.png" alt="pinterest"
+        /></a>
+        <a class="social-buttons twitter" href="https://twitter.com/">
+          <img class="social-img" src="images/twitter.png" alt="twitter"
+        /></a>
+        <a class="social-buttons youtube" href="https://www.youtube.com/">
+          <img class="social-img" src="images/youtube.png" alt="youtube" />
+        </a>
+      </div>
+      <h3>Підключення бібліотеки jQuery:</h3>
+      <img src="images/lib5.png" width="1000" />
+      <h3>JS-код :</h3>
+      <img src="images/js5.png" width="450" />
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".social-buttons").socialMediaShareButton();
+      });
+    </script>
+  </body>
+</html>
